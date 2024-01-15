@@ -1,0 +1,898 @@
+
+/* Add this style to your existing CSS */
+.hero {
+    background: url('img/blackCar-01.png') center/cover no-repeat;
+    color: var(--text-color);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the header */
+header {
+    background-color: #3b4668; /* Adjust the background color as needed */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the logo */
+.logo-icon img {
+    width: 20px; /* Adjust the size of the logo as needed */
+    height: auto;
+}
+
+/* Style for the profile and login icons */
+.profile-icon img {
+    width: 30px; /* Adjust the size of the icons as needed */
+    height: auto;
+}
+
+/* Style for the navigation menu */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+li {
+    font-family: 'Your Font Family', sans-serif; /* Add your preferred font family */
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff; /* Adjust the text color as needed */
+}
+
+/* Style for the navigation links on hover */
+a:hover {
+    text-decoration: underline;
+}
+
+
+a:hover {
+    color: #13fd74;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        margin-top: 1rem;
+    }
+
+    li {
+        margin: 0;
+    }
+}
+
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #13fd74;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.services {
+    background-color: #f8f8f8;
+    padding: 4rem 0;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.vehicles,
+.chargers,
+.contact {
+    padding: 4rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+#services {
+    background-color: #f8f8f8;
+    padding: 4rem 0;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service h3 {
+    color: #333;
+}
+
+.service p {
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+
+    width: 100%;
+    bottom: 0;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Roboto, -apple-system, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+	background: #3b4465;
+}
+
+.forms-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-title {
+	font-size: 32px;
+	letter-spacing: 1px;
+	color: #000000;
+}
+
+.forms {
+	display: flex;
+	align-items: flex-start;
+	margin-top: 30px;
+}
+
+.form-wrapper {
+	animation: hideLayer .3s ease-out forwards;
+}
+
+.form-wrapper.is-active {
+	animation: showLayer .3s ease-in forwards;
+}
+
+@keyframes showLayer {
+	50% {
+		z-index: 1;
+	}
+	100% {
+		z-index: 1;
+	}
+}
+
+@keyframes hideLayer {
+	0% {
+		z-index: 1;
+	}
+	49.999% {
+		z-index: 1;
+	}
+}
+
+.switcher {
+	position: relative;
+	cursor: pointer;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: inherit;
+	font-size: 16px;
+	letter-spacing: .5px;
+	color: #070ad4;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	transform: translateX(0);
+	transition: all .3s ease-out;
+}
+
+.form-wrapper.is-active .switcher-login {
+	color: #00ff55;
+	transform: translateX(90px);
+}
+
+.form-wrapper.is-active .switcher-signup {
+	color: #00ff55;
+	transform: translateX(-90px);
+}
+
+.underline {
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	overflow: hidden;
+	pointer-events: none;
+	width: 100%;
+	height: 2px;
+}
+
+.underline::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: inherit;
+	display: block;
+	width: inherit;
+	height: inherit;
+	background-color: currentColor;
+	transition: transform .2s ease-out;
+}
+
+.switcher-login .underline::before {
+	transform: translateX(101%);
+}
+
+.switcher-signup .underline::before {
+	transform: translateX(-101%);
+}
+
+.form-wrapper.is-active .underline::before {
+	transform: translateX(0);
+}
+
+.form {
+	overflow: hidden;
+	min-width: 260px;
+	margin-top: 50px;
+	padding: 30px 25px;
+  border-radius: 5px;
+	transform-origin: top;
+}
+
+.form-login {
+	animation: hideLogin .3s ease-out forwards;
+}
+
+.form-wrapper.is-active .form-login {
+	animation: showLogin .3s ease-in forwards;
+}
+
+@keyframes showLogin {
+	0% {
+		background: #d7e7f1;
+		transform: translate(40%, 10px);
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	100% {
+		background-color: #fff;
+		transform: translate(35%, -20px);
+	}
+}
+
+@keyframes hideLogin {
+	0% {
+		background-color: #fff;
+		transform: translate(35%, -20px);
+	}
+	50% {
+		transform: translate(0, 0);
+	}
+	100% {
+		background: #d7e7f1;
+		transform: translate(40%, 10px);
+	}
+}
+
+.form-signup {
+	animation: hideSignup .3s ease-out forwards;
+}
+
+.form-wrapper.is-active .form-signup {
+	animation: showSignup .3s ease-in forwards;
+}
+
+@keyframes showSignup {
+	0% {
+		background: #d7e7f1;
+		transform: translate(-40%, 10px) scaleY(.8);
+	}
+	50% {
+		transform: translate(0, 0) scaleY(.8);
+	}
+	100% {
+		background-color: #fff;
+		transform: translate(-35%, -20px) scaleY(1);
+	}
+}
+
+@keyframes hideSignup {
+	0% {
+		background-color: #fff;
+		transform: translate(-35%, -20px) scaleY(1);
+	}
+	50% {
+		transform: translate(0, 0) scaleY(.8);
+	}
+	100% {
+		background: #d7e7f1;
+		transform: translate(-40%, 10px) scaleY(.8);
+	}
+}
+.charger h2 {
+    color: #333;
+}
+
+.form fieldset {
+	position: relative;
+	opacity: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	transition: all .3s ease-out;
+}
+
+.form-login fieldset {
+	transform: translateX(-50%);
+}
+
+.form-signup fieldset {
+	transform: translateX(50%);
+}
+
+.form-wrapper.is-active fieldset {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity .4s ease-in, transform .35s ease-in;
+}
+
+.form legend {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
+}
+
+.input-block {
+	margin-bottom: 20px;
+}
+
+.input-block label {
+	font-size: 14px;
+  color: #a1b4b4;
+}
+
+.input-block input {
+	display: block;
+	width: 100%;
+	margin-top: 8px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #3b4465;
+  background: #eef9fe;
+  border: 1px solid #cddbef;
+  border-radius: 2px;
+}
+
+.form [type='submit'] {
+	opacity: 0;
+	display: block;
+	min-width: 120px;
+	margin: 30px auto 10px;
+	font-size: 18px;
+	line-height: 40px;
+	border-radius: 25px;
+	border: none;
+	transition: all .3s ease-out;
+}
+
+.form-wrapper.is-active .form [type='submit'] {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all .4s ease-in;
+}
+
+.btn-login {
+	color: #fbfdff;
+	background: #a7e245;
+	transform: translateX(-30%);
+}
+
+.btn-signup {
+	color: #a7e245;
+	background: #fbfdff;
+	box-shadow: inset 0 0 0 2px #a7e245;
+	transform: translateX(30%);
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+section {
+    padding: 20px;
+}
+
+.vehicle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle img {
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+.vehicle-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+h2 {
+    color: #fff;
+}
+
+p {
+    color: #666;
+    margin-top: 10px;
+}
+
+.charger {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.charger p {
+    color: #666;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 0.1rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Add this to your styles.css file or in the style section of your HTML */
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #13fd74; /* Use your preferred color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3b4668; /* Change the color on hover */
+}
+/* Your existing styles go here */
+
+.booking-section {
+    padding: 40px 0;
+}
+
+.booking-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.map {
+    height: 300px; /* Adjust the height based on your preference */
+    border: 1px solid #ddd; /* Add a border for visibility */
+}
+/* Your existing styles go here */
+
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    background-color: #3b4668;
+    color: #fff;
+    border: none;
+}
+
+.btn-submit:hover {
+    background-color: #13fd74;
+}
+body {
+    background: #3b4668;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #3b4668;
+  }
+  
+  .profile-button {
+    background: #3b4668;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .profile-button:hover {
+    background: #3b4668;
+  }
+  
+  .profile-button:focus {
+    background: #3b4668;
+    box-shadow: none;
+  }
+  
+  .profile-button:active {
+    background: #3b4668;
+    box-shadow: none;
+  }
+  
+  .back:hover {
+    color: #3b4668;
+    cursor: pointer;
+  }
+  #about-us {
+    padding: 4rem 0;
+}
+
+#about-us h2 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+#about-us p {
+    color: #666;
+    line-height: 1.6;
+}
+
+#about-us a img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.profile-icon a img {
+    width: 30px; /* Adjust the width and height as needed */
+    height: 30px;
+    overflow: hidden;
+    order: 1; /* Move the profile icon to the right */
+    position: fixed;
+    
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.slider-container {
+    width: 80%;
+    margin-left: auto;
+    overflow: hidden;
+    height: 500px;
+    width: 800;
+    
+    
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.navbar-custom {
+    background-color: #343a40;
+    padding: 10px 0;
+}
+
+.navbar-brand-custom {
+    color: #59Ab6E;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; /* Remove underlines from the brand name */
+}
+
+.navbar-nav-custom .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.navbar-toggler-custom {
+    border: 1px solid #ffffff;
+}
+
+.colorGreen {
+    color: #59Ab6E;
+    font-weight: bold;
+}
+
+.product-details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-details-image {
+    flex: 0 0 45%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-details-info {
+    flex: 0 0 45%;
+    max-width: 100%;
+}
+
+.product-details-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.product-details-info .brand-name {
+    color: #59Ab6E;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-details-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #6c757d;
+}
+
+.product-details-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-details-info li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+.product-details-info .btn-custom {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #59Ab6E;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-details-info .btn-custom:hover {
+    background-color: #4c995f;
+}
+
+.footer-custom {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-custom a {
+    color: #59Ab6E;
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    text-decoration: underline;
+}
+
+ #map {
+    height: 100%;
+  }
+  
+/* Add these styles to your existing CSS */
+
+.input-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Add margin for spacing */
+}
+
+.user-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Remove the margin and add margin-top to the form-box */
+.form-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
